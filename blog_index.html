@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Thibaut Boissin</title>
+  <!-- Google tag and Tailwind -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1T7JRSZ7MB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1T7JRSZ7MB');
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="container mx-auto px-4 py-12 max-w-6xl">
+    <!-- Header for Blog -->
+    <header class="mb-12 text-center">
+      <h1 class="text-4xl font-bold gradient-text">My Blog</h1>
+      <p class="text-slate-600 mt-2">Thoughts, projects, and updates</p>
+    </header>
+
+    <!-- Blog Posts List -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Example Blog Post Card -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="h-48 overflow-hidden">
+          <img src="post1-banner.jpg" alt="Post 1" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Post Title 1</h3>
+          <p class="text-slate-600 mb-4">A brief excerpt of what this post is about…</p>
+          <a href="posts/template.html" class="text-blue-500 font-medium hover:text-blue-700 flex items-center">
+            Read More <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- You can duplicate similar cards for more posts -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="h-48 overflow-hidden">
+          <img src="post2-banner.jpg" alt="Post 2" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Post Title 2</h3>
+          <p class="text-slate-600 mb-4">Another short introduction to your second post…</p>
+          <a href="post2.html" class="text-blue-500 font-medium hover:text-blue-700 flex items-center">
+            Read More <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center text-slate-500 py-8">
+    <p>© 2025 Thibaut Boissin. All rights reserved.</p>
+    <p class="text-sm mt-2">Built with HTML, CSS, and JavaScript</p>
+  </footer>
+</body>
+</html>

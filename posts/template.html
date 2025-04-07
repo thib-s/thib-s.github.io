@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Title 1 - Blog - Thibaut Boissin</title>
+  <!-- Google tag and Tailwind -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1T7JRSZ7MB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1T7JRSZ7MB');
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    /* Optional: styling for blog content */
+    .prose p {
+      margin-bottom: 1.25rem;
+      line-height: 1.75;
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Back link to Blog Home -->
+    <a href="./../blog_index.html" class="text-blue-500 font-medium hover:text-blue-700 flex items-center mb-8">
+      <i class="fas fa-arrow-left mr-2"></i> Back to Blog
+    </a>
+
+    <!-- Blog Post Content -->
+    <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+      <img src="post1-banner.jpg" alt="Post 1 Banner" class="w-full h-64 object-cover">
+      <div class="p-8">
+        <h1 class="text-3xl font-bold mb-4">Post Title 1</h1>
+        <p class="text-slate-600 mb-4">Published on: January 1, 2025</p>
+        <div class="prose">
+          <p>
+            This is the content of your blog post. You can write paragraphs, include images, and format text as needed.
+          </p>
+          <p>
+            Continue the article with your thoughts, research findings, and other information that you want to share.
+          </p>
+          <!-- More content here -->
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <footer class="text-center text-slate-500 py-8">
+    <p>© 2025 Thibaut Boissin. All rights reserved.</p>
+    <p class="text-sm mt-2">Built with HTML, CSS, and JavaScript</p>
+  </footer>
+</body>
+</html>
