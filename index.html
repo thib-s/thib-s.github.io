@@ -169,6 +169,23 @@
         .see-more-btn i {
             margin-left: 6px;
         }
+
+        .badge-conf {
+            position: absolute;
+            top: 14px;          /* distance from top-right corner */
+            right: 14px;
+            background: linear-gradient(90deg,#3b82f6,#8b5cf6); /* same colours as your gradient-text */
+            color: #fff;
+            padding: 2px 10px;
+            border-radius: 9999px;          /* fully rounded pill */
+            font-size: 0.7rem;             /* ~11 px */
+            font-weight: 600;
+            letter-spacing: .02em;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,.12);
+            pointer-events: none;           /* avoids intercepting clicks on the card */
+            z-index: 5;                     /* sits above the image */
+        }
     </style>
 </head>
 <body class="min-h-screen">
@@ -228,19 +245,36 @@
 
                 <div class="space-y-0 border rounded-lg overflow-hidden">
                     <!-- Visible News Items -->
+
+
+
                     <div class="news-item">
                         <div class="news-title">
-                            <i class="fas fa-bullhorn"></i>
-                            New Preprint: "Efficient Robust Conformal Prediction via Lipschitz-Bounded Networks"
+                            <i class="fas fa-book"></i>
+                            Accepted at ICML 2025: "An Adaptive Orthogonal Convolution Scheme for Efficient and Flexible CNN Architectures"
                         </div>
                     </div>
 
                     <div class="news-item">
                         <div class="news-title">
-                            <i class="fas fa-bullhorn"></i>
-                            New Preprint: "An Adaptive Orthogonal Convolution Scheme for Efficient and Flexible CNN Architectures"
+                            <i class="fas fa-book"></i>
+                            Accepted at ICML 2025: "Efficient Robust Conformal Prediction via Lipschitz-Bounded Networks"
                         </div>
                     </div>
+
+<!--                    <div class="news-item">-->
+<!--                        <div class="news-title">-->
+<!--                            <i class="fas fa-bullhorn"></i>-->
+<!--                            New Preprint: "Efficient Robust Conformal Prediction via Lipschitz-Bounded Networks"-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="news-item">-->
+<!--                        <div class="news-title">-->
+<!--                            <i class="fas fa-bullhorn"></i>-->
+<!--                            New Preprint: "An Adaptive Orthogonal Convolution Scheme for Efficient and Flexible CNN Architectures"-->
+<!--                        </div>-->
+<!--                    </div>-->
 
                     <div class="news-item">
                         <div class="news-title">
@@ -349,7 +383,8 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover relative">
+                    <span class="badge-conf">ICML 2025</span>
                     <div class="h-48 overflow-hidden">
                         <img src="assets/block_conv_code_2.png" alt="Genomics" class="w-full h-full object-cover">
                     </div>
@@ -361,6 +396,7 @@
                         </p>
 
                         <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="keyword px-3 py-1 bg-slate-100 rounded-full text-sm text-slate-700">ICML 2025</span>
                             <span class="keyword px-3 py-1 bg-slate-100 rounded-full text-sm text-slate-700">Convolution arithmetics</span>
                             <span class="keyword px-3 py-1 bg-slate-100 rounded-full text-sm text-slate-700">Certifiable robustness</span>
                             <span class="keyword px-3 py-1 bg-slate-100 rounded-full text-sm text-slate-700">1-Lipschitz networks</span>
@@ -401,7 +437,8 @@
             </div>
 
         <!-- Project 4 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover relative">
+            <span class="badge-conf">ICML 2024</span>
             <div class="h-48 overflow-hidden">
                 <img src="assets/dp-sgd.png" alt="DP-SGD and Lipschitz Networks" class="w-full h-full object-cover">
             </div>
@@ -427,7 +464,8 @@
         </div>
 
         <!-- Project 3 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover relative">
+            <span class="badge-conf">Neurips 2023</span>
             <div class="h-48 overflow-hidden">
                 <img src="assets/big_picture.jpg" alt="Feature Visualization" class="w-full h-full object-cover">
             </div>
@@ -454,7 +492,8 @@
 
 
         <!-- Project 5 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover relative">
+            <span class="badge-conf">Neurips 2023</span>
             <div class="h-48 overflow-hidden">
                 <img src="assets/otnn.png" alt="1-Lipschitz Neural Networks: An Optimal Transport Perspective" class="w-full h-full object-cover">
             </div>
