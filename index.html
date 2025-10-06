@@ -348,6 +348,53 @@
                 <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Research Projects</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                    <!-- Muon / Newton–Schulz Speedups -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover relative">
+                      <div class="h-48 overflow-hidden">
+                        <img
+                          src="https://github.com/thib-s/flash-newton-schulz/raw/main/assets/speedup_evaluation.png"
+                          alt="Flash Newton–Schulz speedup chart (L40S)"
+                          class="w-full h-full object-cover">
+                      </div>
+                      <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Faster Newton–Schulz for Muon-style Optimizers</h3>
+                        <p class="text-slate-600 mb-4">
+                            <em>Muon/Dion</em> is a promising class of optimizers that maintain
+                          orthonormal parameter transforms to improve stability and generalization.
+                          At their core is the <strong>Newton–Schulz</strong> iteration used to
+                          compute (approximate) matrix sign for orthonormalization. </br>
+                          This work aim to accelerate orthonormal updates used in <em>Muon</em>/Dion thank to
+                          1) a hybrid scheme that converges in ~4 iterations via AOL rescaling, and
+                          2) a Triton kernel reducing redundant memory reads. Early results show promising speedups up to 3x over plain pytorch.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                          <span class="keyword px-3 py-1 bg-slate-100 rounded-full text-sm text-slate-700">Optimizer</span>
+                          <span class="keyword px-3 py-1 bg-slate-100 rounded-full text-sm text-slate-700">Newton–Schulz</span>
+                          <span class="keyword px-3 py-1 bg-slate-100 rounded-full text-sm text-slate-700">Triton</span>
+                          <span class="keyword px-3 py-1 bg-slate-100 rounded-full text-sm text-slate-700">Muon</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-3 text-blue-500 font-medium">
+                          <a href="https://github.com/microsoft/dion/pull/10" class="hover:text-blue-700 flex items-center" target="_blank" rel="noopener">
+                            View PR <i class="fas fa-external-link-alt ml-2"></i>
+                          </a>
+<!--                          <a href="https://github.com/thib-s/flash-newton-schulz" class="hover:text-blue-700 flex items-center" target="_blank" rel="noopener">-->
+<!--                            Code: flash-newton-schulz <i class="fas fa-external-link-alt ml-2"></i>-->
+<!--                          </a>-->
+<!--                          <a href="https://x.com/ThibautBoissin/status/1960324720609374563" class="hover:text-blue-700 flex items-center" target="_blank" rel="noopener">-->
+<!--                            Thread (part 1) <i class="fas fa-external-link-alt ml-2"></i>-->
+<!--                          </a>-->
+                          <a href="https://x.com/ThibautBoissin/status/1961427640340156437" class="hover:text-blue-700 flex items-center" target="_blank" rel="noopener">
+                            Thread <i class="fas fa-external-link-alt ml-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+
+
                     <!-- Project 1 -->
                     <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
                         <div class="h-48 overflow-hidden">
